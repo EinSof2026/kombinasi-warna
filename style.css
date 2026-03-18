@@ -166,7 +166,7 @@ input:focus{
    scroll-snap-type: x mandatory; 
    scroll-behavior: smooth;
    width: 100%;
-   gap: 15px; 
+   gap: 20px; 
    padding-bottom: 20px;
 }
 
