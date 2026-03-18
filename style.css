@@ -166,22 +166,21 @@ input:focus{
    scroll-snap-type: x mandatory; 
    scroll-behavior: smooth;
    width: 100%;
-   /* Jangan gunakan gap di sini agar kamar benar-benar rapat secara horizontal */
-   gap: 0; 
+   gap: 15px; 
    padding-bottom: 20px;
    -webkit-overflow-scrolling: touch;
 }
 
 .kamar {
-   min-width: 100%; /* Memenuhi layar agar tidak terlihat kamar sebelah */
+   min-width: 100%;
    flex-shrink: 0;
    scroll-snap-align: center;
    scroll-snap-stop: always; 
    
    display: flex;
    flex-direction: column;
-   align-items: center; /* Membuat box 364px berada tepat di tengah */
-   gap: 20px; /* Jarak vertikal antar box supaya tidak bersentuhan */
+   align-items: center;
+   gap: 20px;
    padding: 0;
    box-sizing: border-box;
 }
@@ -194,12 +193,10 @@ input:focus{
    font-size: 20px;
    height: 100px;
    padding: 0 20px;
-   
-   /* KUNCI LEBAR: Samakan dengan .judul */
    width: 360px !important; 
-   max-width: 95vw; /* Pengaman agar tetap rapi di layar sangat kecil */
+   max-width: 95vw;
    
-   display: flex; /* Memastikan isi teks di dalam box rapi */
+   display: flex;
    flex-direction: column;
    justify-content: center;
    
