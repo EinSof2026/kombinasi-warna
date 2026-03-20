@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 10px;
+  padding-top: 110px;
+  padding-bottom: 30px;
+  background: transparent;
+  color: white;
+  overflow-x: hidden;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+
+.penjelasan{
+  background: rgba(0, 0, 0, 0.84);
+  padding: 20px;
+  padding-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.h2st, .h2nd, .h2rd, .h2th, .h2fv{
+  text-align: center;
+}
+
+.normal, .add, .darken, .lighten, .multiply, .screen, .overlay, .hardLight, .difference, .exclusion, .colorDodge, .colorBurn, .hue, .color, .luminosity{
+  margin-top: -10px;
+  display: flex;
+}
+
+.h2st{
+  font-size: 125%;
+}
+
+hr{
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.ket{
+  text-indent: 1em;
+}
+
+.normal{
+  gap: 15px;
+}
+
+.add{
+  gap: 40px;
+}
+
+.darken{
+  gap: 18.5px;
+}
+
+.lighten{
+  gap: 15.5px;
+  margin-bottom: 30px;
+}
+
+.hrr{
+  width: 111.89%;
+  margin-left: -20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.h2nd{
+  font-size: 122%;
+  margin-top: 30px;
+}
+
+.multiply{
+  gap: 14px;
+}
+
+.screen{
+  gap: 22px;
+}
+
+.overlay{
+  gap: 18px;
+}
+
+.hardLight{
+  gap: 36px;
+  margin-bottom: 30px;
+}
+
+.h2rd{
+  font-size: 125%;
+}
+
+.difference{
+  gap: 8.8px;
+}
+
+.exclusion{
+  gap: 11px;
+  margin-bottom: 30px;
+}
+
+.h2th{
+  font-size: 135%;
+}
+
+.colorDodge{
+  gap: 31px;
+}
+
+.colorBurn{
+  gap: 44px;
+  margin-bottom: 30px;
+}
+
+.h2fv{
+  font-size: 125%;
+}
+
+.hue{
+  gap: 49.5px;
+}
+
+.color{
+  gap: 39.6px;
+}
+
+.luminosity{
+  gap: 4.5px;
+}
