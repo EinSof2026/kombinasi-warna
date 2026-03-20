@@ -1,153 +1,305 @@
-<!doctype html>
-<html>
-<head>
-   <title>TESTING</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="style.css" rel="stylesheet">
-   <script src="script.js"></script>
-</head>
-<body>
-   <div class="judul">
-      <p class="judull">Kombinasi Warna</p>
-   </div>
-   <div class="latar">
-         <br><br><br><br><br>
-      <div class="inputWarna">
-         <p class="q">Warna apa yang akan kita kombinasikan?</p><br>
-         <hr>
-         <p class="teks1">
-            Warna 1<br>
-            <input type="text" class="warna1" id="input1" maxlength="6" 
-               oninput="this.value = this.value.replace(/[^0-9A-Fa-f]/g, '').toUpperCase(); hitungWarna();">
-            <div class="pagarr" id="pagarr1">
-               <div class="pagar">#</div>
-            </div>
-         </p>
-         
-         <p class="teks2">
-            Warna 2<br>
-            <input type="text" class="warna2" id="input2" maxlength="6" 
-               oninput="this.value = this.value.replace(/[^0-9A-Fa-f]/g, '').toUpperCase(); hitungWarna();">
-            <div class="pagarr2" id="pagarr2">
-               <div class="pagar2">#</div>
-            </div>
-         </p>
-      </div> <br><br><br>
-
-      <hr>
-      <p class="teks3">Hasil Kombinasi ￬</p>
-
-      <div class="slider-container">
-         <div class="kamar">
-            <div class="hasilWarna" id="boxNormal">
-               <p>Normal</p>
-               <p class="kode" id="kodeNormal">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxAdd">
-               <p>Add</p>
-               <p class="kode" id="kodeAdd">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxMultiply">
-               <p>Multiply</p>
-               <p class="kode" id="kodeMultiply">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxScreen">
-               <p>Screen</p>
-               <p class="kode" id="kodeScreen">#FFFFFF</p>
-            </div>
-         </div>
-      
-         <div class="kamar">
-            <div class="hasilWarna" id="boxDarken">
-               <p>Darken</p>
-               <p class="kode" id="kodeDarken">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxLighten">
-               <p>Lighten</p>
-               <p class="kode" id="kodeLighten">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxDifference">
-               <p>Difference</p>
-               <p class="kode" id="kodeDifference">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxExclusion">
-               <p>Exclusion</p>
-               <p class="kode" id="kodeExclusion">#FFFFFF</p>
-            </div>
-         </div>
-      
-         <div class="kamar">
-            <div class="hasilWarna" id="boxOverlay">
-               <p>Overlay</p>
-               <p class="kode" id="kodeOverlay">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxHardLight">
-               <p>Hard Light</p>
-               <p class="kode" id="kodeHardLight">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxSoftLight">
-               <p>Soft Light</p>
-               <p class="kode" id="kodeSoftLight">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxColorDodge">
-               <p>Color Dodge</p>
-               <p class="kode" id="kodeColorDodge">#FFFFFF</p>
-            </div>
-            <button type="button" class="tukar" onclick="tukar()">Tukar ↳↰</button>
-         </div>
-      
-         <div class="kamar">
-            <div class="hasilWarna" id="boxHue">
-               <p>Hue</p>
-               <p class="kode" id="kodeHue">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxColor">
-               <p>Color</p>
-               <p class="kode" id="kodeColor">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxColorBurn">
-               <p>Color Burn</p>
-               <p class="kode" id="kodeColorBurn">#FFFFFF</p>
-            </div>
-            <div class="hasilWarna" id="boxLuminosity">
-               <p>Luminosity</p>
-               <p class="kode" id="kodeLuminosity">#FFFFFF</p>
-            </div>
-            <button type="button" class="tukar" onclick="tukar()">Tukar ↳↰</button>
-         </div>
-      </div>
-      
-      <br><br><br><br><br><br><br>
-      <p class="poweredBy">Powered By</p>
-      <p class="by">VSCode</p>
-      <br><br><br><br><br><br><br><br>
-      <div class="penutup">
-         <p class="penutup1">Kombinasi Warna</p>
-         <p class="penutup2">Platform kombinasi warna untuk semua warna</p>
-         <br><br>
-         <p class="penutup3">Kab. Toba, Kec.Lumbanjulu</p>
-         <p class="penutup4">Lumbanrang, Agro</p>
-         <br>
-         <p class="penutup5">IG: <a href="https://www.instagram.com/yosshtrk_">yosshtrk_</a></p>
-         <p class="penutup6">WA: <a href="https://wa.me/6283892404543">Yosafat</a></p>
-         <p class="penutup6">Email: hutaurukiyos@gmail.com</p>
-      </div><br><br>
-      
-   <hr>
-   <footer>
-      <p class="footer">Program ini dibuat oleh: Yosafat Jupril Hutauruk</p>
-   </footer>
-   </div>
-   
-  <iframe src="penjel\ind.html" id="penjelasan"></iframe>
-   
-  <button type="button" onclick="v()" id="v" class="v">V</button>
-  <button type="button" onclick="vevet()" id="vevet" class="vevet">V</button>
-   
-   <p class="v1" id="v1">V</p>
-   
-   <div class="bulat1"></div>
-   <div class="bulat2"></div>
-   <div class="bulat3"></div>
-</body>
+<!doctype html>
+
+<html>
+
+<head>
+
+   <title>TESTING</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="style.css" rel="stylesheet">
+
+   <script src="script.js"></script>
+
+</head>
+
+<body>
+
+   <div class="judul">
+
+      <p class="judull">Kombinasi Warna</p>
+
+   </div>
+
+   <div class="latar">
+
+         <br><br><br><br><br>
+
+      <div class="inputWarna">
+
+         <p class="q">Warna apa yang akan kita kombinasikan?</p><br>
+
+         <hr>
+
+         <p class="teks1">
+
+            Warna 1<br>
+
+            <input type="text" class="warna1" id="input1" maxlength="6" 
+
+               oninput="this.value = this.value.replace(/[^0-9A-Fa-f]/g, '').toUpperCase(); hitungWarna();">
+
+            <div class="pagarr" id="pagarr1">
+
+               <div class="pagar">#</div>
+
+            </div>
+
+         </p>
+
+         
+
+         <p class="teks2">
+
+            Warna 2<br>
+
+            <input type="text" class="warna2" id="input2" maxlength="6" 
+
+               oninput="this.value = this.value.replace(/[^0-9A-Fa-f]/g, '').toUpperCase(); hitungWarna();">
+
+            <div class="pagarr2" id="pagarr2">
+
+               <div class="pagar2">#</div>
+
+            </div>
+
+         </p>
+
+      </div> <br><br><br>
+
+
+
+      <hr>
+
+      <p class="teks3">Hasil Kombinasi ￬</p>
+
+
+
+      <div class="slider-container">
+
+         <div class="kamar">
+
+            <div class="hasilWarna" id="boxNormal">
+
+               <p>Normal</p>
+
+               <p class="kode" id="kodeNormal">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxAdd">
+
+               <p>Add</p>
+
+               <p class="kode" id="kodeAdd">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxMultiply">
+
+               <p>Multiply</p>
+
+               <p class="kode" id="kodeMultiply">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxScreen">
+
+               <p>Screen</p>
+
+               <p class="kode" id="kodeScreen">#FFFFFF</p>
+
+            </div>
+
+         </div>
+
+      
+
+         <div class="kamar">
+
+            <div class="hasilWarna" id="boxDarken">
+
+               <p>Darken</p>
+
+               <p class="kode" id="kodeDarken">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxLighten">
+
+               <p>Lighten</p>
+
+               <p class="kode" id="kodeLighten">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxDifference">
+
+               <p>Difference</p>
+
+               <p class="kode" id="kodeDifference">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxExclusion">
+
+               <p>Exclusion</p>
+
+               <p class="kode" id="kodeExclusion">#FFFFFF</p>
+
+            </div>
+
+         </div>
+
+      
+
+         <div class="kamar">
+
+            <div class="hasilWarna" id="boxOverlay">
+
+               <p>Overlay</p>
+
+               <p class="kode" id="kodeOverlay">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxHardLight">
+
+               <p>Hard Light</p>
+
+               <p class="kode" id="kodeHardLight">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxSoftLight">
+
+               <p>Soft Light</p>
+
+               <p class="kode" id="kodeSoftLight">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxColorDodge">
+
+               <p>Color Dodge</p>
+
+               <p class="kode" id="kodeColorDodge">#FFFFFF</p>
+
+            </div>
+
+            <button type="button" class="tukar" onclick="tukar()">Tukar ↳↰</button>
+
+         </div>
+
+      
+
+         <div class="kamar">
+
+            <div class="hasilWarna" id="boxHue">
+
+               <p>Hue</p>
+
+               <p class="kode" id="kodeHue">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxColor">
+
+               <p>Color</p>
+
+               <p class="kode" id="kodeColor">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxColorBurn">
+
+               <p>Color Burn</p>
+
+               <p class="kode" id="kodeColorBurn">#FFFFFF</p>
+
+            </div>
+
+            <div class="hasilWarna" id="boxLuminosity">
+
+               <p>Luminosity</p>
+
+               <p class="kode" id="kodeLuminosity">#FFFFFF</p>
+
+            </div>
+
+            <button type="button" class="tukar" onclick="tukar()">Tukar ↳↰</button>
+
+         </div>
+
+      </div>
+
+      
+
+      <br><br><br><br><br><br><br>
+
+      <p class="poweredBy">Powered By</p>
+
+      <p class="by">VSCode</p>
+
+      <br><br><br><br><br><br><br><br>
+
+      <div class="penutup">
+
+         <p class="penutup1">Kombinasi Warna</p>
+
+         <p class="penutup2">Platform kombinasi warna untuk semua warna</p>
+
+         <br><br>
+
+         <p class="penutup3">Kab. Toba, Kec.Lumbanjulu</p>
+
+         <p class="penutup4">Lumbanrang, Agro</p>
+
+         <br>
+
+         <p class="penutup5">IG: <a href="https://www.instagram.com/yosshtrk_">yosshtrk_</a></p>
+
+         <p class="penutup6">WA: <a href="https://wa.me/6283892404543">Yosafat</a></p>
+
+         <p class="penutup6">Email: hutaurukiyos@gmail.com</p>
+
+      </div><br><br>
+
+      
+
+   <hr>
+
+   <footer>
+
+      <p class="footer">Program ini dibuat oleh: Yosafat Jupril Hutauruk</p>
+
+   </footer>
+
+   </div>
+
+   
+
+  <iframe src="https://github.com/EinSof2026/kombinasi-warna/ind.html" id="penjelasan"></iframe>
+
+   
+
+  <button type="button" onclick="v()" id="v" class="v">V</button>
+
+  <button type="button" onclick="vevet()" id="vevet" class="vevet">V</button>
+
+   
+
+   <p class="v1" id="v1">V</p>
+
+   
+
+   <div class="bulat1"></div>
+
+   <div class="bulat2"></div>
+
+   <div class="bulat3"></div>
+
+</body>
+
 </html>
