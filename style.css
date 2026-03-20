@@ -63,6 +63,384 @@ body {
    font-size: 25px;
 }
 
+.v{
+  background: transparent;
+  color: transparent;
+  font-family: Consolas;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  padding: 0;
+  margin: 0;
+  width: 25px;
+  height: 50px;
+  position: fixed;
+  top: 30.5px;
+  right: 42px;
+  transform: scaleX(2.5);
+  z-index: 999;
+  visibility: visible;
+}
+
+.vevet{
+  background: transparent;
+  color: transparent;
+  font-family: Consolas;
+  border-left: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: none;
+  border-bottom: none;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  padding: 0;
+  margin: 0;
+  width: 25px;
+  height: 50px;
+  position: fixed;
+  top: 30.5px;
+  right: 42px;
+  transform: scaleX(2.5);
+  z-index: 999;
+  rotate: 180deg;
+  visibility: hidden;
+}
+
+.v1{
+  position: fixed;
+  top: 30.5px;
+  right: 50px;
+  background: transparent;
+  transform: rotateX(0deg) scaleX(2.5);
+  transition: 0.8s;
+  z-index: 998;
+}
+
+.inputWarna{
+   margin-top: 25px;
+   background: rgba(255, 255, 255, 0.1);
+   font-size: 35px;
+   height: 260px;
+   padding: 30px;
+   font-weight: bold;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 15px;
+}
+
+.q{
+   text-align: center;
+   margin-top: -5px;
+   margin-bottom: -5px;
+   font-size: 16px;
+}
+
+hr{
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   width: 119.7%;
+   margin-bottom: 25px;
+   margin-top: -15px;
+   margin-left: -30px;
+}
+
+.teks1{
+   margin-top: 0;
+   text-shadow: 3px 3px 1px black;
+}
+
+.warna1, .warna2{
+   background: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   padding: 8px;
+   padding-left: 30px;
+   width: 262px;
+   color: white;
+   font-size: 20px;
+   transition: all 0.5s ease;
+}
+
+.pagarr{
+   position: relative;
+   top: -64.399px;
+   left: 13px;
+   background: transparent;
+   font-size: 22px;
+   height: 18px;
+   width: 13px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s ease;
+   overflow: hidden;
+}
+
+.pagar, .pagar2{
+   width: 20px;
+   padding: 0;
+   color: inherit;
+   text-shadow: 1px 1px 1px black;
+}
+
+.teks2{
+   position: relative;
+   top: -65px;
+   left: 0;
+   text-shadow: 3px 3px 1px black;
+}
+
+.pagarr2{
+   position: relative;
+   top: -129.399px;
+   left: 13px;
+   background: transparent;
+   font-size: 22px;
+   height: 18px;
+   width: 13px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s ease;
+   overflow: hidden;
+}
+
+input{
+   text-transform: uppercase;
+   text-shadow: 1px 1px 1px black;
+   font-weight: medium;
+   box-shadow: 0 0 1px black;
+}
+
+input:focus{
+   outline: none;
+}
+
+.slider-container {
+   display: flex;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory; 
+   scroll-behavior: smooth;
+   width: 100%;
+   gap: 15px; 
+   padding-bottom: 20px;
+}
+
+.kamar {
+   min-width: 100%;
+   flex-shrink: 0;
+   scroll-snap-align: center;
+   scroll-snap-stop: always; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.hasilWarna {
+   background: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 15px;
+   font-weight: bold;
+   font-size: 20px;
+   height: 100px;
+   padding: 0 20px;
+   width: 360px !important; 
+   max-width: 95vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0 !important;
+   position: relative !important;
+   transition: all 0.3s ease;
+   box-sizing: border-box;
+}
+
+.hasilWarna p{
+   text-shadow: 1px 1px 1px black;
+   transition:  all 0.3s ease;
+}
+
+.kode{
+   margin: 0;
+   font-size: 15px;
+   margin-left: -20px;
+   width: 96px;
+   color: #b9b8b8;
+   position: relative;
+   left: 83%;
+   text-shadow: 1px 1px 3px solid rgba(0, 0, 0, 0.553);
+   transition:  all 0.3s ease;
+}
+
+.teks3{
+   text-align: center;
+   font-weight: bold;
+   font-size: 27px;
+}
+
+.tukar{
+   position: relative;
+   bottom: 0;
+   left: 120px;
+   width: 90px;
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   padding: 7px;
+   backdrop-filter: blur(10px);
+   background: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 6px;
+   box-shadow: 0 0 1px black;
+   text-shadow: 1px 1px 1px black;
+}
+
+.poweredBy{
+   text-align: center;
+   color: #9e9e9e;
+}
+
+.by{
+   margin-top: -10px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 35px;
+}
+
+.penutup1{
+   font-weight: bold;
+   font-size: 25px;
+   margin-left: 10px;
+}
+
+.penutup2{
+   color: #9e9e9e;
+   margin-top: -15px;
+   margin-left: 10px;
+}
+
+.penutup3{
+   color: white;
+   font-weight: medium;
+   margin-top: -10px;
+   margin-left: 10px;
+}
+
+.penutup4{
+   margin-left: 10px;
+   margin-top: -10px;
+   color: #9e9e9e;
+}
+
+.penutup5{
+   margin-left: 10px;
+   color: #9e9e9e;
+}
+
+.penutup5 a, .penutup6 a{
+   color: orangered;
+   text-decoration: none;
+}
+
+.penutup6{
+   margin-top: -10px;
+   margin-left: 10px;
+   color: #9e9e9e;
+}
+
+.footer{
+   text-align: center;
+   color: #9e9e9e;
+}
+
+.latar{
+   margin-top: -22px;
+   padding: 20px;
+   min-height: 100vh;
+   background: rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(160px);
+}
+
+.bulat1{
+   background: orangered;
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   position: fixed;
+   top: 260px;
+   left: -150px;
+   z-index: -99;
+   animation-name: bulat1;
+   animation-duration: 1.4s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.bulat2{
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   position: fixed;
+   left: 220px;
+   z-index: -99;
+   animation: bulat2 2s ease-in-out infinite alternate;
+}
+
+.bulat3{
+   background: rgba(15, 41, 191, 0.841);
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   position: fixed;
+   top: 40px;
+   left: 10px;
+   z-index: -99;
+}
+
+iframe{
+margin-bottom: 30px;
+  border: none;
+  position: fixed;
+  top: -385px;
+  left: 170px;
+  min-height: 100vh;
+  width: 100%;
+  transform: scale(0.001) rotatex(90deg);
+  transition: 0.8s;
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0;
+}   overflow-x: hidden;
+   position: relative;
+}
+
+.judul{
+   background: rgba(150, 150, 250, 0.1);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   height: 50px;
+   width: 364px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 40px;
+   font-size: 13px;
+   backdrop-filter: blur(30px);
+   position: fixed;
+   top: 30px;
+   z-index: 99;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.judull{
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 25px;
+}
+
 .inputWarna{
    margin-top: 25px;
    background: rgba(255, 255, 255, 0.1);
